@@ -2,17 +2,18 @@
 
 ## Current Container Setup
 
-| Container Name | Image                              | Purpose                              | Port |
-|----------------|------------------------------------|--------------------------------------|------|
-| backend        | python:3.10.4-alpine               | backend (FastAPI)                    | 8000 |
-| frontend       | node:18.2-alpine3.15               | vue.js application                   | 3000 |
+| Container Name | Image                              | Purpose           | Port |
+|----------------|------------------------------------|-------------------|------|
+| backend        | python:3.10.4-alpine               | backend (FastAPI) | 8000 |
+| frontend       | node:18.2-alpine3.15               | React application | 3000 |
 
 ## Project Start
 
-1) Open cmd/terminal in project root (where this file is)
-2) run `bin/dev start --build` to build and run the docker containers
+1) Set `IMDB_KEY` in environment variables to your IMDb api token
+2) Open cmd/terminal in project root (where this file is)
+3) run `bin/dev start --build` to build and run the docker containers
     * You might have to give exec rights to `bin/dev` file
-3) Once backend and frontend containers are running use [localhost:3000](http://localhost:3000) to use frontend
+4) Once backend and frontend containers are running use [localhost:3000](http://localhost:3000) to use frontend
 
 ## Project Commands
 
