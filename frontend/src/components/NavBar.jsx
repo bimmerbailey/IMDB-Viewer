@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import "bootstrap/js/src/collapse.js";
 
 export default function NavBar() {
   return (

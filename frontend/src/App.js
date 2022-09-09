@@ -11,7 +11,7 @@ function App() {
       <NavBar/>
       <div className="data">
         <Routes className="">
-        {/*  <Route path="/" element={<App/>}/>*/}
+          <Route path="/" element={<RandomMovie/>}/>
           <Route path="/random" element={<RandomMovie/>}/>
           <Route path="/most-popular" element={<PopularMovies/>}/>
           <Route path="/movie/:id" element={<Movie/>}/>
