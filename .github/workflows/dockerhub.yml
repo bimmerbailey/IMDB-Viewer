@@ -29,7 +29,7 @@ jobs:
           file: backend/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/armada_backend:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/armada-backend:latest
 
       - name: Build and push frontend
         id: docker_build_frontend
@@ -39,4 +39,4 @@ jobs:
           file: frontend/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/armada_frontend:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/armada-frontend:latest
